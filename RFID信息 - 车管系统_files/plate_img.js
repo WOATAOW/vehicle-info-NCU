@@ -6,7 +6,7 @@
  */
 async function renderPlate(plateText, width = 600, height = 100) {
 
-  const drawText = plateText.replace(/[^A-Za-z0-9]/g, "\u0000");
+  const drawText = plateText.replace(/[^A-Za-z0-9]/g, "□");
 
   await document.fonts.ready;
   const canvas = document.createElement("canvas");
